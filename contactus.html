@@ -201,14 +201,14 @@
     <script src="js/custom.js"></script>
 	<script src="js/scrolltopcontrol.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ba-hashchange.min.js"></script>
+	
 
 <script type="text/javascript">
 $( document ).ready(function() {
 
 	
 	// Bind the event.
-  	$(window).hashchange(hashchanged);
+  	$(window).on("hashchange", hashchanged);
   	hashchanged();
 	
 	$('div.carousel-inner').magnificPopup({

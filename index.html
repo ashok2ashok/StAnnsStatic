@@ -364,18 +364,16 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
 	<script src="js/scrolltopcontrol.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.ba-hashchange.min.js"></script>
 <script type="text/javascript">
 $( document ).ready(function() {
 
 	
-	// Bind the event.
-  	$(window).hashchange(hashchanged);
+	// Bind the event using native hashchange.
+  	$(window).on('hashchange', hashchanged);
   	hashchanged();
 	
 	$('div.carousel-inner').magnificPopup({
